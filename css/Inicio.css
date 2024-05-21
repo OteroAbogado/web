@@ -1,0 +1,170 @@
+@import url('https://file:///C:/Users/munop/OneDrive/Escritorio/Alejandra%20Mu%C3%B1oz%20Porras/Uniminuto/Cuarto%20semestre/Fundamentos%20de%20programacion%20web/Pagina%20Web%20Abogado%20Nicolas/index.html#');
+
+/* Estilos generales para el cuerpo y el html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo_Abogado {
+    width: 43px;
+    height: 43px;
+    padding-right: 10px;
+}
+
+h1 {
+    color: #efb810;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botons {
+    border: none;
+    background: none;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos para el contenedor de la portada */
+.Portada {
+    position: relative;
+    height: 93vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PortadaLogo {
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+/* Estilos para la imagen de fondo */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-image-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para el texto superpuesto */
+.text-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Estilos para el subtítulo */
+.text-overlay h3 {
+    font-size: 1em;
+    margin-bottom: 2px;
+    color: #efb810;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para el footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+
+.copyright {
+    margin: 0;
+    color: white;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botons {
+        padding: 10px;
+    }
+
+    .PortadaLogo {
+        width: 80%;
+    }
+
+    .text-overlay h1 {
+        font-size: 2em;
+    }
+
+    .text-overlay h3 {
+        font-size: 0.8em;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+*{
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+Justify-content: center;
+background-color: rgb(20, 20,20);
+}
+.neon-text {
+    text-transform: uppercase;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: .3s linear;
+    color: transparent;
+    -webkit-text-stroke:2px white;
+    background-image: linear-gradient(to left,  rgb(239, 184, 16), rgb(252, 204, 60), black, rgb(255, 247, 223));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 30s linear infinite;
+}
+   @keyframes move{
+    100%{
+        background-position: 2000px 0;
+    }
+   }
+
+
